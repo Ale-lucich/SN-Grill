@@ -1,0 +1,186 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:  url("../logos\ y\ fotos/restaurante.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.barra {
+    justify-content: space-between;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    display: flex;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 10px 10px 0  rgba(0, 0, 0, 25%);
+}
+
+.barra-item {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.barra-item:hover {
+    background-color: #aa858550
+}
+
+.barra img {
+    height: 60px;
+    width: 60px;
+}
+
+form {
+    background-color: #ecfdd5;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    margin-top: 100px;
+    padding: 60px;
+    border-radius: 20px;
+    width: 300px;
+    height: 75%;
+}
+
+h2{
+    color: black;
+    font-size: 30px;
+}
+
+label {
+    margin-top: 15px;
+    color: #423c3c;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+input, textarea{
+    background-color: #edfff0;
+    border-radius: 5px;
+    border: 1px solid #423c3c ;
+    padding: 10px;
+}
+
+.btn {
+    margin: 25px 0 0 50px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: #f8fdaf;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+
+p {
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 30px 20px;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pie-de-pag {
+    height: 100%;
+    width: 100%;
+    background-color: #353242;
+    padding: 55px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+}
+
+.info a {
+    padding: 10px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.info {
+    width: 25%;
+    padding: 0 15px;
+    
+}
+
+.info h3 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 800;
+    
+}
+
+.info img {
+    height: 30px;
+}
+
+
+@media (min-width: 650px){
+
+    form {
+        width: 350px;
+    }
+
+    .btn {
+        margin-left: 75px;
+    }
+
+}
+
+
+@media (max-width: 480px){
+
+    .barra {
+        height: 65px ;
+        width: 480px;
+    }
+    .barra img {
+        height: 100%;
+        width:55px;
+    }
+
+    form {
+        width: 200px
+    }
+
+    .btn {
+        margin-left: 0;
+    }
+
+    .pie-de-pag {
+        width: 480px;
+    }
+
+}
+
